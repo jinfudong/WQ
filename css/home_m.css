@@ -1,0 +1,194 @@
+
+*{margin:0px;padding: 0px;}
+/*最外层div*/
+#home_all{
+position: absolute; width:10rem;height:100%;overflow-x: hidden;
+background: linear-gradient(to bottom right,lightskyblue,white,blueviolet);
+}
+
+/*聊天框架窗口*/
+#home_chat_div{font-size:13px;width:20rem;height:100%; top:0;position:relative;display: flex;flex-flow: row nowrap;
+}
+/*聊天窗口左侧div*/
+#home_chat_left{
+	position: absolute;width:10rem;left:0;
+}
+
+/*左侧头部*/
+#home_chat_left_title{
+position: relative;width:10rem;height:1.3rem;top:0%;background-color: lightskyblue;border-radius: 5px;
+}
+/*左侧头部头像*/
+#home_chat_left_title >img{
+position: absolute;height:80%;border-radius:50% ;top:10%;left:5%;
+}
+/*左侧头部用户名*/
+#home_chat_left_title >p{
+	position: absolute;width:50%;top:35%;left:25%;text-align: center;color: orange;
+}
+
+/*左侧添加好友按钮*/
+#home_chat_left_title >span{
+	position: absolute;width:5%;height:80%; bottom:10%;right:5%;font-size: 30px;color: white;}
+/*左侧好友列表*/	
+#home_chat_left_list{
+	position: relative;width:100%;margin-top: 0;overflow-y: auto;overflow-x: hidden;
+	background-color: rgba(128,128,128,.1);
+}
+
+/*每个好友的div*/
+#home_chat_left_list >div{
+	position: relative;width:100%;height:2.1rem;border-bottom:1px solid gray;
+}
+/*鼠标放到每个好友的div时*/
+#home_chat_left_list >div:hover{
+	background-color: rgba(0,255,0,.3);cursor: pointer;
+	}
+/*每个好友div的头像*/
+#home_chat_left_list >div >img{
+	position: absolute;height:60%;top:20%;left:3%;border-radius: 50%;
+}
+/*每个好友div的名字*/
+#home_chat_left_list >div >p:nth-of-type(1){
+	position: absolute;height:60%;top:30%;left:35%;
+}
+/*每个好友div的未读消息数量*/
+#home_chat_left_list >div >p:nth-of-type(2){
+	position: absolute;width:15px;height:15px; right:2%;top:40%;text-align:center;background-color: orange;
+	border-radius:50%; font-size:12px;color: gray;
+}
+/*每个好友div的时间*/
+#home_chat_left_list >div >p:nth-of-type(3){
+	position: absolute;width:100%; bottom: 3%;right:2%;text-align: right; font-size:12px;color: gray;
+}
+
+/*聊天窗口右侧div*/
+#home_chat_right{
+	position: fixed;width: 10rem;height:100%;left:10rem;background-color: white;
+}
+/*右侧标题栏*/
+#home_chat_right_title{
+	position: absolute;width:100%;height:7%;top:0;background-color: lightskyblue;border-radius: 5px;
+}
+/*右侧返回按钮*/
+#home_chat_right_title >button{
+	position: absolute;width:13%;height:70%;left:5%;top:15%;background-color: rgba(0,0,0,.0);
+	border:1px solid white;border-radius:10px;color: white
+}
+/*右侧标题栏文字*/
+#home_chat_right_title >p{
+	position: absolute;width:100%;height:60%;top:20%;text-align: center;color: orange;font-size:15px;
+}
+
+/*右侧信息内容区*/
+#home_chat_right_msg{
+	position: absolute;width:100%;height:70%;top:7%;background-color:rgba(255,255,255,.3);
+	overflow: auto;overflow-x: hidden;
+}
+/*每条消息的div*/
+#home_chat_right_msg >div{
+  	position: relative;
+  	width:10rem;
+  	margin-top:1rem;
+  	border: 1px solid rgba(0,0,0,.0);
+  }
+  /*每条消息头像div*/
+ #home_chat_right_msg >div >div:nth-of-type(1){
+  	position: absolute;
+  	height:1.5rem;
+  	width: 9.4rem;
+  	left: 0.3rem;
+  	/*border: 1px solid blue;*/
+  } 
+  /*每条消息的头像*/
+#home_chat_right_msg >div >div:nth-of-type(1) >img{
+	position: absolute;height:1.3rem;border-radius:50%;
+} 
+/*每条消息的时间*/
+#home_chat_right_msg >div >div:nth-of-type(1) >span{
+	position: absolute;
+	width:100%;
+ 	top:10%;
+ 	text-align: center;
+ 	font-size:12px;
+ 	color:gray;
+} 
+/*每条消息的内容div*/
+ #home_chat_right_msg >div >div:nth-of-type(2) {
+ 	position: relative;
+ 	width:5.6rem;
+ 	left: 2.2rem;
+ 	margin-top: 1rem;
+ 	
+ }
+ #home_chat_right_msg >div >div:nth-of-type(2) >button{
+ 	font-size:15px;
+ 	text-align: left;
+ 	background-color: greenyellow;
+ 	border: 0px;
+ 	border-radius:5px;
+ 	padding: 5px;
+ 	padding-left: 5px;
+ 	padding-right:5px;
+    color: rgba(0,0,0,.9);
+ }
+/*消息显示在左边还是显示在右边*/
+ .button2{float: right;text-align: left;}
+ /*每条消息的头像*/
+.img1{left:0;}
+.img2{right:0;}
+
+
+
+ /*每条消息的时间*/
+ #home_chat_right_msg >div >span:nth-of-type(1){
+ 	position: relative;
+ 	width:10rem;
+ 	height:1rem;
+ 	top:0;
+ 	text-align: center;
+ 	font-size:10px;
+ 	color:gray;
+ }
+ /*右侧底部div*/
+ #home_chat_right_input{
+	position: absolute;width:100%;height:23%;top:77%;background-color: rgba(0,0,0,.4);
+}
+ /*右侧底部消息输入框*/
+ #home_chat_right_input >textarea{
+ 	position: absolute;
+ 	width:80%;
+ 	height:70%;
+ 	top:15%;
+ 	left:5%;
+ 	overflow: hidden;
+	letter-spacing: 1px; /*字体间距*/
+    text-indent:4%;   /*文字距离边框距离*/
+    line-height:2 ;
+    border: 0;
+    border-radius:10px;
+ }
+/*发送按钮*/
+ #home_chat_right_input_button1{
+ 	position: absolute;
+ 	width:10%;height:15%;left:88%;bottom:17%;
+	background-color: white;
+	color:orange;
+	text-align: center;
+	border: 0;
+	letter-spacing: 3px; /*字体间距*/
+	cursor: pointer;
+	border-radius:2px;
+	font-size: 12px;
+ }
+ #home_chat_right_input_button1:hover{
+ 	background-color: orange;
+ 	color: white;
+ }
+/*底部菜单条*/
+#home_footer{
+	position: fixed;
+	width:10rem;height:1.4rem;
+	bottom: 0;
+	background-color: white;
+}
