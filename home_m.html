@@ -146,25 +146,19 @@
 		<!--手机底部div-->
 		<div id="home_footer"></div>
 </section>
-		<script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
+		<script type="text/javascript" src="js/zepto.min.js" ></script>
+		<script type="text/javascript" src="js/zepto.fx.js" ></script>
 		<script>
 		width = $(window).width()
 		$("html").css("font-size",width/10)
 		
 		$("#home_chat_left_list >div").click(function(){
-			$("#home_chat_right").stop(true).animate({
+			$("#home_chat_right").animate({
 					   left:'0%',
 					},300);}
 		);
 		
-		$("#home_chat_right_title >button").click(function(){
-//			$("#home_chat_right").stop(true).animate({
-//					   left:'100%',
-//					},300);	
-    alert(123)
-   
-		})
-	
+	  //点击发送按钮
 		$("#home_chat_right_input_button1").click(function(){
 //			var str =  $("#home_chat_right_input >textarea").val()
 //			console.log(str.length)

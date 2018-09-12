@@ -10,85 +10,266 @@
 	<body>
 		<div id="home_bg"></div>
 		<section id="home_all">
-		<div id="home_title_div"></div>
+		<div id="home_title_div">
+			<span>登录/注册</span>
+			<span>刷新列表</span>
+			<span>个人主页</span>
+			<span>动态大厅</span>
+			<span>退出登录</span>
+			<select>
+				<option>选择主题</option>
+				<option>倾城之恋</option>
+				<option>选择主题</option>
+				<option>诺亚红缨</option>
+				<option>落衫青烟</option>
+				<option>玲珑紫夜</option>
+				<option>钦北绿伊</option>
+			</select>
+		</div>
 			<!--聊天div-->
 			<div id="home_chat_div" >
 				<!--聊天左侧div-->
 				<div id="home_chat_left">
 					<div id="home_chat_left_title">
 						<img src="img/steve_01.png" />
-						<p>Jfdong</p>
-						<
+						<p>Hi, Jfdong</p>
+						<input type="text" placeholder="搜索列表好友..."/>
+						<button >搜索</button>
+						<ul id="home_chat_left_title_ul">
+							<li >最近</li>
+							<li style="left:25%;background-color: greenyellow;">好友</li>
+							<li style="left:50%;">群聊</li>
+							<li style="left:75%;">添加好友</li>
+						</ul>
 					</div>
-					<div id="home_chat_left_list">
-						<div>
-							<img src="img/steve_01.png" />
-							<p>Alice</p>
-							<p>1</p>
-							<p>2018-9-9 18:36:23</p>
+					<!--最近聊天列表-->
+					<div id="home_chat_left_list1" >
+						<div class="friend_div">
+							<img class="friend_div_img1" src="img/steve_01.png" />
+							<p class="friend_div_p1">范冰冰</p>
+							<p class="friend_div_p2">99</p>
+							<p class="friend_div_p3">2018-9-9 18:36:23</p>
+							<button class="friend_div_bt1" value="0">||</button>
+							<button class="friend_div_bt2">删除</button>
+							<button class="friend_div_bt3">置顶</button>
+							<button class="friend_div_bt4">特别关心</button>
 						</div>
-						<div>
-							<img src="img/steve_01.png" />
-							<p>范冰冰</p>
-							<p>1</p>
-							<p>2018-9-9 18:36:23</p>
+						<div class="friend_div">
+							<img class="friend_div_img1" src="img/steve_01.png" />
+							<p class="friend_div_p1">范冰冰</p>
+							<p class="friend_div_p2">99</p>
+							<p class="friend_div_p3">2018-9-9 18:36:23</p>
+							<button class="friend_div_bt1" value="0">||</button>
+							<button class="friend_div_bt2">删除</button>
+							<button class="friend_div_bt3">置顶</button>
+							<button class="friend_div_bt4">特别关心</button>
 						</div>
-						<div>
-							<img src="img/steve_01.png" />
-							<p>Lusia</p>
-							<p>1</p>
-							<p>2018-9-9 18:36:23</p>
+						<div class="friend_div">
+							<img class="friend_div_img1" src="img/steve_01.png" />
+							<p class="friend_div_p1">范冰冰</p>
+							<p class="friend_div_p2">99</p>
+							<p class="friend_div_p3">2018-9-9 18:36:23</p>
+							<button class="friend_div_bt1" value="0">||</button>
+							<button class="friend_div_bt2">删除</button>
+							<button class="friend_div_bt3">置顶</button>
+							<button class="friend_div_bt4">特别关心</button>
 						</div>
-						<div>
-							<img src="img/steve_01.png" />
-							<p>薛之谦</p>
-							<p>1</p>
-							<p>2018-9-9 18:36:23</p>
+						<div class="friend_div">
+							<img class="friend_div_img1" src="img/steve_01.png" />
+							<p class="friend_div_p1">范冰冰</p>
+							<p class="friend_div_p2">99</p>
+							<p class="friend_div_p3">2018-9-9 18:36:23</p>
+							<button class="friend_div_bt1" value="0">||</button>
+							<button class="friend_div_bt2">删除</button>
+							<button class="friend_div_bt3">置顶</button>
+							<button class="friend_div_bt4">特别关心</button>
 						</div>
-						<div>
-							<img src="img/steve_01.png" />
-							<p>Alice</p>
-							<p>1</p>
-							<p>2018-9-9 18:36:23</p>
+						<div class="friend_div">
+							<img class="friend_div_img1" src="img/steve_01.png" />
+							<p class="friend_div_p1">范冰冰</p>
+							<p class="friend_div_p2">99</p>
+							<p class="friend_div_p3">2018-9-9 18:36:23</p>
+							<button class="friend_div_bt1" value="0">||</button>
+							<button class="friend_div_bt2">删除</button>
+							<button class="friend_div_bt3">置顶</button>
+							<button class="friend_div_bt4">特别关心</button>
 						</div>
-						<div>
-							<img src="img/steve_01.png" />
-							<p>Alice</p>
-							<p>1</p>
-							<p>2018-9-9 18:36:23</p>
+						<div class="friend_div">
+							<img class="friend_div_img1" src="img/steve_01.png" />
+							<p class="friend_div_p1">范冰冰</p>
+							<p class="friend_div_p2">99</p>
+							<p class="friend_div_p3">2018-9-9 18:36:23</p>
+							<button class="friend_div_bt1" value="0">||</button>
+							<button class="friend_div_bt2">删除</button>
+							<button class="friend_div_bt3">置顶</button>
+							<button class="friend_div_bt4">特别关心</button>
 						</div>
-						<div>
-							<img src="img/steve_01.png" />
-							<p>Alice</p>
-							<p>1</p>
-							<p>2018-9-9 18:36:23</p>
+						<div class="friend_div">
+							<img class="friend_div_img1" src="img/steve_01.png" />
+							<p class="friend_div_p1">范冰冰</p>
+							<p class="friend_div_p2">99</p>
+							<p class="friend_div_p3">2018-9-9 18:36:23</p>
+							<button class="friend_div_bt1" value="0">||</button>
+							<button class="friend_div_bt2">删除</button>
+							<button class="friend_div_bt3">置顶</button>
+							<button class="friend_div_bt4">特别关心</button>
 						</div>
-						<div>
-							<img src="img/steve_01.png" />
-							<p>Alice</p>
-							<p>1</p>
-							<p>2018-9-9 18:36:23</p>
+						<div class="friend_div">
+							<img class="friend_div_img1" src="img/steve_01.png" />
+							<p class="friend_div_p1">范冰冰</p>
+							<p class="friend_div_p2">99</p>
+							<p class="friend_div_p3">2018-9-9 18:36:23</p>
+							<button class="friend_div_bt1" value="0">||</button>
+							<button class="friend_div_bt2">删除</button>
+							<button class="friend_div_bt3">置顶</button>
+							<button class="friend_div_bt4">特别关心</button>
 						</div>
-						<div>
-							<img src="img/steve_01.png" />
-							<p>Alice</p>
-							<p>1</p>
-							<p>2018-9-9 18:36:23</p>
+						<div class="friend_div">
+							<img class="friend_div_img1" src="img/steve_01.png" />
+							<p class="friend_div_p1">范冰冰</p>
+							<p class="friend_div_p2">99</p>
+							<p class="friend_div_p3">2018-9-9 18:36:23</p>
+							<button class="friend_div_bt1" value="0">||</button>
+							<button class="friend_div_bt2">删除</button>
+							<button class="friend_div_bt3">置顶</button>
+							<button class="friend_div_bt4">特别关心</button>
 						</div>
-						<div>
-							<img src="img/steve_01.png" />
-							<p>Alice</p>
-							<p>1</p>
-							<p>2018-9-9 18:36:23</p>
+						<div class="friend_div">
+							<img class="friend_div_img1" src="img/steve_01.png" />
+							<p class="friend_div_p1">范冰冰</p>
+							<p class="friend_div_p2">99</p>
+							<p class="friend_div_p3">2018-9-9 18:36:23</p>
+							<button class="friend_div_bt1" value="0">||</button>
+							<button class="friend_div_bt2">删除</button>
+							<button class="friend_div_bt3">置顶</button>
+							<button class="friend_div_bt4">特别关心</button>
 						</div>
-						<div>
-							<img src="img/steve_01.png" />
-							<p>Alice</p>
-							<p>1</p>
-							<p>2018-9-9 18:36:23</p>
+						<div class="friend_div">
+							<img class="friend_div_img1" src="img/steve_01.png" />
+							<p class="friend_div_p1">范冰冰</p>
+							<p class="friend_div_p2">99</p>
+							<p class="friend_div_p3">2018-9-9 18:36:23</p>
+							<button class="friend_div_bt1" value="0">||</button>
+							<button class="friend_div_bt2">删除</button>
+							<button class="friend_div_bt3">置顶</button>
+							<button class="friend_div_bt4">特别关心</button>
 						</div>
 					</div>
-
+					<!--**************************************************************好友列表-->
+					<div id="home_chat_left_list2" style="display: block;">
+					   <div class="friend_div">
+							<img class="friend_div_img1"  src="img/steve_02.png" />
+							<p class="friend_div_p1">Alice</p>
+							<p class="left_list2_signature">人生若只如初见，何事秋风悲画扇</p>
+							<button class="friend_div_bt1" value="0">||</button>
+							<button class="friend_div_bt2">删除</button>
+							<button class="friend_div_bt3">置顶</button>
+							<button class="friend_div_bt4">特别关心</button>
+						</div>
+						<div class="friend_div">
+							<img class="friend_div_img1"  src="img/steve_03.png" />
+							<p class="friend_div_p1">Jfdong</p>
+							<p class="left_list2_signature">他还没有个性签名哦</p>
+							<button class="friend_div_bt1" value="0">||</button>
+							<button class="friend_div_bt2">删除</button>
+							<button class="friend_div_bt3">置顶</button>
+							<button class="friend_div_bt4">特别关心</button>
+						</div> 
+						<div class="friend_div">
+							<img class="friend_div_img1"  src="img/steve_04.png" />
+							<p class="friend_div_p1">Alice</p>
+							<p class="left_list2_signature">愿你历尽千帆，归来仍是少年，致逝去的青春</p>
+							<button class="friend_div_bt1" value="0">||</button>
+							<button class="friend_div_bt2">删除</button>
+							<button class="friend_div_bt3">置顶</button>
+							<button class="friend_div_bt4">特别关心</button>
+						</div> 
+						<div class="friend_div">
+							<img class="friend_div_img1"  src="img/steve_01.png" />
+							<p class="friend_div_p1">Alice</p>
+							<p class="left_list2_signature">人生若只如初见，何事秋风悲画扇</p>
+							<button class="friend_div_bt1" value="0">||</button>
+							<button class="friend_div_bt2">删除</button>
+							<button class="friend_div_bt3">置顶</button>
+							<button class="friend_div_bt4">特别关心</button>
+						</div> 
+						<div class="friend_div">
+							<img class="friend_div_img1"  src="img/steve_01.png" />
+							<p class="friend_div_p1">Alice</p>
+							<p class="left_list2_signature">人生若只如初见，何事秋风悲画扇</p>
+							<button class="friend_div_bt1" value="0">||</button>
+							<button class="friend_div_bt2">删除</button>
+							<button class="friend_div_bt3">置顶</button>
+							<button class="friend_div_bt4">特别关心</button>
+						</div> 
+						<div class="friend_div">
+							<img class="friend_div_img1"  src="img/steve_01.png" />
+							<p class="friend_div_p1">Alice</p>
+							<p class="left_list2_signature">人生若只如初见，何事秋风悲画扇</p>
+							<button class="friend_div_bt1" value="0">||</button>
+							<button class="friend_div_bt2">删除</button>
+							<button class="friend_div_bt3">置顶</button>
+							<button class="friend_div_bt4">特别关心</button>
+						</div> 
+						<div class="friend_div">
+							<img class="friend_div_img1"  src="img/steve_01.png" />
+							<p class="friend_div_p1">Alice</p>
+							<p class="left_list2_signature">人生若只如初见，何事秋风悲画扇</p>
+							<button class="friend_div_bt1" value="0">||</button>
+							<button class="friend_div_bt2">删除</button>
+							<button class="friend_div_bt3">置顶</button>
+							<button class="friend_div_bt4">特别关心</button>
+						</div> 
+						<div class="friend_div">
+							<img class="friend_div_img1"  src="img/steve_01.png" />
+							<p class="friend_div_p1">Alice</p>
+							<p class="left_list2_signature">人生若只如初见，何事秋风悲画扇</p>
+							<button class="friend_div_bt1" value="0">||</button>
+							<button class="friend_div_bt2">删除</button>
+							<button class="friend_div_bt3">置顶</button>
+							<button class="friend_div_bt4">特别关心</button>
+						</div> 
+					</div>
+                    <!--**************************************************************群列表-->
+					<div id="home_chat_left_list3">
+						<div class="friend_div">
+							<img class="friend_div_img1" src="img/steve_01.png" />
+							<p class="friend_div_p1">开心麻花</p>
+							<p class="friend_div_p2">99</p>
+							<p class="friend_div_p3">2018-9-9 18:36:23</p>
+							<button class="friend_div_bt1" value="0">||</button>
+							<button class="friend_div_bt2">退出</button>
+							<button class="friend_div_bt3">置顶</button>
+							<button class="friend_div_bt4">屏蔽消息</button>
+						</div>
+						<div class="friend_div">
+							<img class="friend_div_img1" src="img/steve_01.png" />
+							<p class="friend_div_p1">水群一号</p>
+							<p class="friend_div_p2">99</p>
+							<p class="friend_div_p3">2018-9-9 18:36:23</p>
+							<button class="friend_div_bt1" value="0">||</button>
+							<button class="friend_div_bt2">退出</button>
+							<button class="friend_div_bt3">置顶</button>
+							<button class="friend_div_bt4">屏蔽消息</button>
+						</div>
+						<div class="friend_div">
+							<img class="friend_div_img1" src="img/steve_01.png" />
+							<p class="friend_div_p1">刷单群</p>
+							<p class="friend_div_p2">99</p>
+							<p class="friend_div_p3">2018-9-9 18:36:23</p>
+							<button class="friend_div_bt1" value="0">||</button>
+							<button class="friend_div_bt2">退出</button>
+							<button class="friend_div_bt3">置顶</button>
+							<button class="friend_div_bt4">屏蔽消息</button>
+						</div>
+					</div>
+					<!--**************************************************************特别关注-->
+					<div id="home_chat_left_list4">
+						<p>请输入好友昵称或者群号</p>
+						<input type="text" placeholder="点击输入..."/>
+						<button>搜好友</button>
+						<button style="left:55%;">搜索群</button>
+					</div>
 				</div>
 				<!--右侧div-->
 				<div id="home_chat_right">
@@ -146,7 +327,8 @@
 </section>
 		<script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
 		<script>
-   
+        
+        //点击发送按钮
 		$("#home_chat_right_input_button1").click(function(){
 			var message = $("#home_chat_right_input >textarea").val()
 			if(message==""){alert("请输入内容")}
@@ -161,6 +343,32 @@
 	            $('#home_chat_right_msg').animate({ scrollTop: height }, 500)
 	 
 		    })
+		//点击每个好友div的滑动按钮
+		$(".friend_div_bt1").click(function(event){
+			event.stopPropagation()
+			if($(this).attr("value")==0){
+			$(this).parent().animate({ right: "90%" },500)
+			$(this).attr("value",1)
+			}
+			else{
+			$(this).parent().animate({ right: "0%" },500)
+			
+			$(this).attr("value",0)
+			}
+		})
+		
+		//点击左侧ul列表,显示相应的div
+		function hidden_div(){
+			$("#home_chat_left_list1,#home_chat_left_list2,#home_chat_left_list3,#home_chat_left_list4").css("display","none")
+		}
+		$("#home_chat_left_title_ul >li").click(function(){
+			var li_index = $(this).index()+1
+			hidden_div()
+			$(this).siblings().css("background-color","")
+			$(this).css("background-color","greenyellow")
+			$("#home_chat_left_list"+li_index).css("display","block")
+		})
+		
 	   
 		</script>
 	</body>
