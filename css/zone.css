@@ -86,7 +86,6 @@ li{
 	background: rgba(1,1,1,.3);
 	border-radius: 0 0 6px 6px;
 	width: 100%;
-	min-width: 150px;
 }
 .detail li{
 	line-height: 26px;
@@ -145,7 +144,89 @@ li{
 	padding-left: 30px;
 }
 .viny{
-	
+	font-size: .8em;
+}
+.viny dl dd{
+	color: #b9b9b9;
+	line-height: 24px;
+}
+dl{
+	display: block;
+}
+dd{
+	display: block;
+	marker-start: 40px;
+}
+.art{
+	background: url(../img/vinyl.png) no-repeat left;
+	width: 130px;
+	float: left;
+	background-size: 120px;
+}
+.art img{
+	width: 90px;
+	height: 90px;
+	margin-left: 11px;
+}
+img{
+	border: 0;
+	vertical-align: middle;
+}
+.icon_song{
+	margin-left: 130px;
+	color: white;
+}
+.icon_song span{
+	width: 12px;
+	height: 24px;
+	margin-right: 7px;
+	display: block;
+	float: left;
+	background: url(../img/icons.png) no-repeat;
+	background-position: -33px -344px;
+}
+.icon_artist{
+	margin-left: 130px;
+	color: white;
+}
+.icon_artist span{
+	width: 12px;
+	height: 24px;
+	margin-right: 7px;
+	display: block;
+	float: left;
+	background: url(../img/icons.png) no-repeat;
+	background-position: -16px -344px;
+}
+.icon_album{
+	margin-left: 130px;
+	color: white;
+}
+.icon_album span{
+	width: 12px;
+	height: 24px;
+	margin-right: 7px;
+	display: block;
+	float: left;
+	background: url(../img/icons.png) no-repeat;
+	background-position: 0px -344px;
+}
+.icon_like{
+	margin-left: 130px;
+	color: #b5738e;
+}
+.icon_like span{
+	width: 12px;
+	height: 24px;
+	margin-right: 7px;
+	display: block;
+	float: left;
+	background: url(../img/icons.png) no-repeat;
+	background-position: -1px -299px;
+}
+.music audio{
+	width: 100%;
+	padding-top: 10px;
 }
 footer{
 	position: relative;
