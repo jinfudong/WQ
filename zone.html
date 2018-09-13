@@ -53,15 +53,29 @@
 					<div class="slide_next"></div>
 				</div>
 				<div class="count_info">
-					
+					<div class="box">
+						{content}
+                    </div>
 				</div>
 			</div>
 			<div class="container_inner">
 				<ul class="blogs">
+                    <li class="arrow_box">
+                        <div class="ti"></div>
+                        <div class="ci"></div>
+                        <div class="box">
+                            <div class="blog_content">
+                                <label>
+                                    <h3>创建新日志</h3><br>
+                                    <textarea name="txt" ></textarea>
+                                </label>
+                            </div>
+                        </div>
+                    </li>
 					<li class="arrow_box">
 						<div class="ti"></div>
 						<div class="ci"></div>
-						<div class="blog_box">
+						<div class="box">
 							<div class="blog_content">
 								<h2 class="title">{title}</h2>
 								<ul class="text_info">{content}</ul>
@@ -76,10 +90,10 @@
 					<li class="arrow_box">
 						<div class="ti"></div>
 						<div class="ci"></div>
-						<div class="blog_box">
+						<div class="box">
 							<div class="blog_content">
-								<h2 class="title">我希望</h2>
-								<ul class="text_info">我希望as大萨达所大asdasdasdasd asdasd asdasdasdas 所大所大所多啊实打实大萨达asdas</ul>
+								<h2 class="title">{title}</h2>
+								<ul class="text_info">{content}</ul>
 							</div>
 							<ul class="detail">
 								<li class="likes">{likes}</li>
@@ -92,8 +106,10 @@
 				<aside class="aside_right">
 					<div class="search">
 						<form class="search_form">
-							<input type="text" value="Search" />
-						</form>
+                            <label>
+                                <input type="text" placeholder="Search" />
+                            </label>
+                        </form>
 					</div>
 					<div class="viny">
 						<dl>

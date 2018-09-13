@@ -1,7 +1,21 @@
+/*<768超小（手机） >768小（平板） >992中（桌面） >1200大（显示器）*/
+/*@media screen and (min-width: 992px){*/
+	/*.count_info{*/
+		/*background: greenyellow;*/
+	/*}*/
+/*}*/
+/*@media screen and (max-width: 992px){*/
+	/*.count_info{*/
+		/*background: #87CEFA;*/
+	/*}*/
+/*}*/
 *{
 	margin: 0;
 	padding: 0;
 	font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #464647;
 }
 .links{
 	position: fixed;
@@ -13,33 +27,38 @@
 	z-index: 99;
 }
 .container{
-	margin-top: 73px;
+	margin: 73px auto 2em auto;
 	position: relative;
 	left: 0;
 	width: 90vw;
-	background-color: #464647;
-	padding: 3em 5vw 3em 5vw;
+    max-width: 1024px;
+    min-width: 769px;
 }
 .container_inner{
-	position: relative;
+	display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 .b_card{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0;
 	position: relative;
-	left: 0;
-	top: 0;
 	width: 100%;
 	height: 15em;
 }
 .count_info{
-	position: absolute;
-	right: 0;
-	top: 0;
-	l
+	position: relative;
+	/*right: 0;*/
+	/*top: 0;*/
+	width: 300px;
+	height: 100%;
+
 }
 .blogs{
 	position: relative;
-	margin-top: 3em;
-	width: 55%;
+	margin: 3em 2em 0 0;
+	width: calc(100% - 300px - 1em);
 	min-width: 300px;
 }
 li{
@@ -48,9 +67,8 @@ li{
 .arrow_box{
 	position: relative;
 	width: 100%;
-	padding: 1em 0;
 	border-right: 2px #111 solid;
-	padding-right: 30px;
+	padding: 1em 30px 1em 0;
 	box-sizing: border-box;
 }
 .ti{
@@ -73,21 +91,21 @@ li{
 	background: #000;
 	border: 2px solid #464647;
 }
-.blog_box{
+.box{
 	position: relative;
 	background-color: #222;
 	box-shadow: 0 1px 0 rgba(255,255,255,.1),inset 0 1px 1px rgba(0,0,0,.7);
 	width: 100%;
-	/*height: 100px;*/
+	height: 100%;
 	color: #b9b9b9;
 	border-radius: 6px;
-	padding-bottom: 2em;
 }
 .blog_content{
-	padding: 1em 1em 0 1em;
+    position: relative;
+	padding: 1em;
 }
 .detail{
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	background: rgba(1,1,1,.3);
 	border-radius: 0 0 6px 6px;
@@ -105,32 +123,35 @@ li{
 	transition: all .2s ease-in-out;
 }
 .likes{
-	background: url(../img/icons.png) no-repeat;
-	background-position: 0px -240px;
+	background: url(../img/icons.png) no-repeat 0 -240px;
 	float: right;
 	padding: 0 0 0 14px;
 }
 .comments{
-	background: url(../img/icons.png) no-repeat;
-	background-position: 0px -220px;
+	background: url(../img/icons.png) no-repeat 0 -220px;
 	float: right;
 	padding: 0 0 0 14px;
 }
 .icon_time{
-	background: url(../img/icons.png) no-repeat;
-	background-position: 0 -206px;
+	background: url(../img/icons.png) no-repeat 0 -206px;
 	padding: 0 0 0 18px;
 	margin-left: 10px;
 }
+textarea{
+    width: 100%;
+    min-height: 5em;
+    background: rgba(0,0,0,.25);
+    border: 1px solid #111;
+    color: #b9b9b9;
+    font-size: 1.1em;
+}
 .aside_right{
-	position: absolute;
-	top: 0;
-	right: 5%;
-	width: 35%;
-	margin: 20px 0;
+	width: 300px;
+	margin: 4em 0 0 0;
+    /*max-width: 300px;*/
 }
 .aside_right div{
-	box-shadow: 0px 1px 0px rgba(255,255,255,.1),inset 0px 1px 1px rgba(0,0,0,.7);
+	box-shadow: 0 1px 0 rgba(255,255,255,.1),inset 0px 1px 1px rgba(0,0,0,.7);
 	border-radius: 6px;
 	padding: 15px;
 	background: #222;
@@ -162,7 +183,7 @@ dl{
 }
 dd{
 	display: block;
-	marker-start: 40px;
+	/*marker-start: 40px;*/
 }
 .art{
 	background: url(../img/vinyl.png) no-repeat left;
@@ -189,8 +210,7 @@ img{
 	margin-right: 7px;
 	display: block;
 	float: left;
-	background: url(../img/icons.png) no-repeat;
-	background-position: -33px -344px;
+    background: url(../img/icons.png) no-repeat -33px -344px;
 }
 .icon_artist{
 	margin-left: 130px;
@@ -202,8 +222,7 @@ img{
 	margin-right: 7px;
 	display: block;
 	float: left;
-	background: url(../img/icons.png) no-repeat;
-	background-position: -16px -344px;
+    background: url(../img/icons.png) no-repeat -16px -344px;
 }
 .icon_album{
 	margin-left: 130px;
@@ -215,8 +234,7 @@ img{
 	margin-right: 7px;
 	display: block;
 	float: left;
-	background: url(../img/icons.png) no-repeat;
-	background-position: 0px -344px;
+    background: url(../img/icons.png) no-repeat 0px -344px;
 }
 .icon_like{
 	margin-left: 130px;
@@ -228,8 +246,7 @@ img{
 	margin-right: 7px;
 	display: block;
 	float: left;
-	background: url(../img/icons.png) no-repeat;
-	background-position: -1px -299px;
+    background: url(../img/icons.png) no-repeat -1px -299px;
 }
 .music audio{
 	width: 100%;
@@ -238,7 +255,7 @@ img{
 footer{
 	position: relative;
 	width: 100vw;
-	height: 30vh;
+	height: 6em;
 	background-color: #222;
 	border-top: #464647 3px double;
 }
